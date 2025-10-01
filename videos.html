@@ -227,8 +227,6 @@
         body {
             margin: 0;
             font-family: "Roboto Mono", monospace;
-            font-optical-sizing: auto;
-            font-style: normal;
             background-color: #f4f4f4;
             color: #333;
         }
@@ -269,7 +267,7 @@
         }
 
         .menu-link:hover {
-            color: #ff6347; /* Change color on hover */
+            color: #ff6347;
             text-decoration: underline;
         }
 
@@ -277,73 +275,48 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row;
+            flex-direction: column;
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 40%;
             transform: translateX(-50%) translateY(-50%);
             width: 90%;
-            max-width: 1200px;
-        }
-
-        .headline {
-            flex: 1;
+            max-width: 800px;
             color: #fff;
-            font-size: 36px;  /* Adjusted to be smaller */
-            width: 100%;
-            text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-            text-align: left;
-            line-height: 1.2;
-            margin-right: 50px;
+            text-shadow: 3px 3px rgba(0,0,0,0.5);
         }
 
-        .contactform {
-            flex: 1;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px;
-            text-align: left;
-        }
-
-        .contactform label {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .contactform input,
-        .contactform textarea {
-            width: 100%;
-            padding: 12px;
+        .main-content h1 {
+            font-size: 36px;
+            color: #ff6347;
             margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            font-size: 16px;
+            text-align: center;
         }
 
-        .contactform button {
-            padding: 12px 20px;
-            background-color: #ff6347;
-            border: none;
-            color: white;
+        .main-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .main-content li {
             font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            margin-bottom: 8px;
         }
 
-        .contactform button:hover {
-            background-color: #e5533f;
+        .main-content a {
+            color: #ffcc00;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 16px;
         }
 
-        /* Mobile responsiveness */
+        .main-content a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .header-image {
-                height: 60vh; /* Adjust header image size on mobile */
+                height: 60vh;
             }
 
             .container {
@@ -364,34 +337,15 @@
             }
 
             .main-content {
-                flex-direction: column;
                 top: 30%;
-                transform: translateX(-50%) translateY(-50%);
-            }
-
-            .headline {
-                font-size: 12px;  /* Smaller font size on smaller screens */
-                margin-right: 0;
-                margin-bottom: 30px;
-                text-align: center;
-            }
-
-            .contactform {
                 width: 90%;
-                max-width: 100%;
-                margin: 0 auto;
             }
 
-            .contactform label {
-                font-size: 16px;
+            .main-content h1 {
+                font-size: 28px;
             }
 
-            .contactform input,
-            .contactform textarea {
-                font-size: 14px;
-            }
-
-            .contactform button {
+            .main-content li {
                 font-size: 16px;
             }
         }
@@ -410,17 +364,15 @@
     </div>
 
     <div class="main-content">
-        <div class="headline">
-            <h1>Videos</h1>
-            <ul>
-                <li>Blue Jules - Offline</li>
-                <a href="https://www.youtube.com/watch?v=Pz4dC5QOiGY&list=RDPz4dC5QOiGY&start_radio=1"_blank">Video 1</a>
-                <li>Blue Jules - Since She's Gone</li>
-                <a href="https://www.youtube.com/watch?v=pXFUflYX0v8&list=RDpXFUflYX0v8&start_radio=1"_blank">Video 2</a>
-                <li>Blue Jules Solo</li>
-                <a href="https://www.youtube.com/shorts/StnuvfjU-5I"_blank">Video 3</a>
-            </ul>
-        </div>
+        <h1>Videos</h1>
+        <ul>
+            <li>Blue Jules - Offline</li>
+            <a href="https://www.youtube.com/watch?v=Pz4dC5QOiGY&list=RDPz4dC5QOiGY&start_radio=1" target="_blank">Video 1</a>
+            <li>Blue Jules - Since She's Gone</li>
+            <a href="https://www.youtube.com/watch?v=pXFUflYX0v8&list=RDpXFUflYX0v8&start_radio=1" target="_blank">Video 2</a>
+            <li>Blue Jules Solo</li>
+            <a href="https://www.youtube.com/shorts/StnuvfjU-5I" target="_blank">Video 3</a>
+        </ul>
     </div>
   </body>
 </html>
