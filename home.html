@@ -329,9 +329,15 @@
 
             .main-content {
                 flex-direction: column;
-                top: 30%;
-                transform: translateX(-50%) translateY(-50%);
-            }
+                position: absolute; /* or relative, depending on your layout */
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+            } 
+
+
+
+
 
             .headline {
                 font-size: 20px;
@@ -344,7 +350,7 @@
             }
 
             .headline p {
-                font-size: 1em;
+                font-size: 0.5em;
             }
         }
     </style>
@@ -359,11 +365,6 @@
             <a class="menu-link" href="videos.html">Videos</a>
             <a class="menu-link" href="contact.html">Contact</a>
         </div>
-      <div>
-        <p>
-          Info
-        </p>
-      </div>
     </div>
 
     <div class="main-content">
